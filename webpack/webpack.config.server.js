@@ -35,6 +35,15 @@ module.exports = {
         test: /\.css$/,
         loader: 'ignore-loader',
       },
+      {
+        test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'assets/[hash].[ext]',
+          },
+        },
+      },
     ],
   },
 };
