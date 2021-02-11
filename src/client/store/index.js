@@ -1,4 +1,4 @@
 const initialState = {
-  pepe: 'jose',
+  user: { username: 'arrettino', password: 'pppp' },
 };
 export default initialState;
